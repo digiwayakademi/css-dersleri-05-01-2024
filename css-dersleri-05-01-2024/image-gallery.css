@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery div{
+    margin: 3px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease-out;
+    object-fit: cover;
+    background-position: center;
+   
+}
+
+.gallery img:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}

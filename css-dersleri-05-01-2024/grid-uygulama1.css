@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+
+.header{
+    grid-column: 1 / span 3;
+    text-align: center;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.content{
+    grid-column: 1 / span 2;
+    padding: 20px;
+}
+
+.sidebar{
+    padding: 20px;
+}
+
+footer{
+    grid-column: 1 / span 3 ;
+    text-align: center;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 20px;
+    font-size: 32px;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    background-color: #034f84;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+
+}
+
+.item{   
+        background-color: #f7786b;
+        padding: 20px;        
+        color: #fff;
+        font-size: 25px;   
+}
+
+.item:first-child{
+    /* grid-column-start: 2;
+    grid-column-end: 5; */
+
+    /* grid-column: 1 / 5; */
+    /* grid-column: 1 / span 4; */
+
+    /* grid-row-start: 2;
+    grid-row-end:4; */
+
+    /* grid-row: 2 / 4; */
+    /* grid-row: 2/ span 2; */
+
+    /* grid-area: row / colon / (row için ne kadar ilerlemek istiyorsam) / (colon için ne kadar ilerlemek istiyorsam)  */
+
+    grid-area: 1 / 2 / span 3 / span 4;
+}

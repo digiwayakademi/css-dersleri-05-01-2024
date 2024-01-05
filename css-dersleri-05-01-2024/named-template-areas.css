@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+/* 
+    Temlate Area Kullanımı
+    Kaç kolonlu bir yapı kulanmak istiyorsanız her satırda o kadar etiket kullanımı yapıyorsunuz.
+    Eğer content 3 kolonun 2 si kaplasın istiyorsak ilk iki satıra kontent yazmamız diğer satıra da side bar yazmamız yeterli oluyor.
+    Grid area lara bu satırlarda kullandığım isimlerin aynısını vermek zorundayım */
+
+    grid-template-areas: 
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+    gap: 5px;
+}
+
+.header{
+    grid-area: header;    
+    text-align: center;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.content{
+    grid-area: content;   
+    padding: 40px;
+}
+
+.sidebar{    
+    grid-area: sidebar;
+    padding: 40px;
+
+}
+
+footer{
+   grid-area: footer;
+    text-align: center;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 20px;
+    font-size: 32px;
+}
